@@ -1,14 +1,8 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import React from "react";
 
 export default function CareersPage() {
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-black text-white px-4">
       <div className="text-center max-w-xl">
@@ -16,7 +10,7 @@ export default function CareersPage() {
           VoidEsports Careers
         </h1>
         <p className="text-lg md:text-2xl mb-8">
-          We're building something epic. Stay tuned.
+          We&apos;re building something epic. Stay tuned.
         </p>
         <div className="text-5xl font-extrabold tracking-tight animate-pulse">
           Coming Soon
