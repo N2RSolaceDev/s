@@ -17,13 +17,6 @@ const featuredTeams = [
 
 const latestNews = [
   {
-    title: 'Void Esports Merges with MYSTIKHQ',
-    date: '2025-06-23',
-    image: '/news/mystik.png',
-    description: 'We are proud to announce the merging of Void and Mystik! We are super excited for the future and what Mystik brings to the table.',
-    category: 'Organization',
-  },
-  {
     title: 'Void Announces Upcoming Valorant Team',
     date: '2025-06-01',
     image: '/teams/valorant.png',
