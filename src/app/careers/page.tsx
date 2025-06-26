@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export default function CareersPage() {
   return (
@@ -8,7 +8,7 @@ export default function CareersPage() {
           VoidEsports Careers
         </h1>
         <p className="text-lg md:text-2xl mb-8">
-          We're building something epic. Stay tuned.
+          We&apos;re building something epic. Stay tuned.
         </p>
         <div className="text-5xl font-extrabold tracking-tight animate-pulse">
           Coming Soon
