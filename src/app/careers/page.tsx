@@ -37,7 +37,7 @@ export default function CareersPage() {
             </h2>
             <p className="text-gray-400">
               We&apos;re currently finalizing our hiring roadmap. Stay tuned for new opportunities
-              in engineering, design, marketing, customer success, and more.
+              in recruitment, design, marketing, customer success, and more.
             </p>
           </div>
         </section>
