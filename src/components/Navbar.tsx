@@ -13,6 +13,7 @@ const navigation = [
   { name: 'Schedule', href: '/schedule' },
   { name: 'Shop', href: '/shop' },
   { name: 'About', href: '/about' },
+  { name: 'Ambassadors', href: '/ambassadors' },
 ];
 
 export default function Navbar() {
