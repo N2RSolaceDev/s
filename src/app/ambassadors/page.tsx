@@ -15,8 +15,15 @@ export default function AmbassadorsPage() {
 
       <main className="min-h-screen bg-black text-gray-100">
         {/* Hero Section */}
-        <section className="py-16 md:py-24 bg-black flex flex-col items-center justify-center min-h-[500px]">
-          <div className="max-w-4xl mx-auto px-6 text-center">
+        <section className="py-16 md:py-24 bg-black flex flex-col items-center justify-center min-h-[500px] relative overflow-hidden">
+          {/* Logo background */}
+          <img
+            src="/logos/logo.png"
+            alt="Void Logo Background"
+            className="absolute left-1/2 top-1/2 w-72 md:w-[400px] -translate-x-1/2 -translate-y-1/2 opacity-20 pointer-events-none select-none transition-opacity duration-500 will-change-opacity fade-on-scroll"
+            style={{ zIndex: 0 }}
+          />
+          <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
             <h1 className="text-4xl md:text-5xl font-bold mb-10 leading-tight text-white">
               Announcing the Void Outreach Program!
             </h1>
@@ -140,3 +147,19 @@ export default function AmbassadorsPage() {
   );
 }
 
+// Add this to the bottom of the file for the fade effect
+if (typeof window !== 'undefined') {
+  window.addEventListener('scroll', () => {
+    const logo = document.querySelector('.fade-on-scroll');
+    if (logo) {
+      const fadeStart = 0;
+      const fadeEnd = 200;
+      const scrollY = window.scrollY;
+      let opacity = 1;
+      if (scrollY > fadeStart) {
+        opacity = Math.max(0, 1 - (scrollY - fadeStart) / (fadeEnd - fadeStart));
+      }
+      (logo as HTMLElement).style.opacity = String(opacity * 0.2); // 0.2 is the base opacity
+    }
+  });
+}
