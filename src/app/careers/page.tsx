@@ -15,9 +15,9 @@ export default function CareersPage() {
       <meta property="og:url" content="https://www.voidesports.org/careers " />
       <meta property="og:image" content="https://www.voidesports.org/logo.png " />
 
-      <main className="min-h-screen bg-gray-900 text-gray-100">
+      <main className="min-h-screen bg-black text-gray-100">
         {/* Hero Section */}
-        <section className="py-16 md:py-24 bg-gradient-to-b from-blue-950 to-gray-900">
+        <section className="py-16 md:py-24 bg-black flex flex-col items-center justify-center min-h-[500px]">
           <div className="max-w-4xl mx-auto px-6 text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-white">
               Build the Future With Us
@@ -30,8 +30,8 @@ export default function CareersPage() {
         </section>
 
         {/* Coming Soon Section */}
-        <section className="py-16 px-6">
-          <div className="max-w-3xl mx-auto bg-gray-800 rounded-xl shadow-md p-8 text-center">
+        <section className="py-16 px-6 bg-[#0F0F0F]">
+          <div className="max-w-3xl mx-auto bg-[#18181b] rounded-xl shadow-md p-8 text-center">
             <h2 className="text-2xl font-semibold text-white mb-4">
               Positions Coming Soon
             </h2>
@@ -43,31 +43,31 @@ export default function CareersPage() {
         </section>
 
         {/* About Our Culture */}
-        <section className="py-16 px-6 bg-gray-800">
+        <section className="py-16 px-6 bg-black">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-center text-white mb-8">
               Why Join Us?
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-gray-700 p-6 rounded-lg shadow-sm">
+              <div className="bg-[#18181b] p-6 rounded-lg shadow-sm">
                 <h3 className="text-xl font-semibold mb-2 text-white">Innovation First</h3>
                 <p className="text-gray-300">
                   We encourage creativity and experimentation. Solve real-world problems with cutting-edge tools.
                 </p>
               </div>
-              <div className="bg-gray-700 p-6 rounded-lg shadow-sm">
+              <div className="bg-[#18181b] p-6 rounded-lg shadow-sm">
                 <h3 className="text-xl font-semibold mb-2 text-white">Growth-Focused</h3>
                 <p className="text-gray-300">
                   We invest in your development. From mentorship to learning budgets, grow with us.
                 </p>
               </div>
-              <div className="bg-gray-700 p-6 rounded-lg shadow-sm">
+              <div className="bg-[#18181b] p-6 rounded-lg shadow-sm">
                 <h3 className="text-xl font-semibold mb-2 text-white">Remote Friendly</h3>
                 <p className="text-gray-300">
                   Work from anywhere in the world. Flexible hours and inclusive culture.
                 </p>
               </div>
-              <div className="bg-gray-700 p-6 rounded-lg shadow-sm">
+              <div className="bg-[#18181b] p-6 rounded-lg shadow-sm">
                 <h3 className="text-xl font-semibold mb-2 text-white">Impactful Work</h3>
                 <p className="text-gray-300">
                   Your work will make a difference — for users, for the planet, and for the future.
@@ -78,15 +78,15 @@ export default function CareersPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 px-6">
-          <div className="max-w-3xl mx-auto bg-blue-600 text-white rounded-xl shadow-lg p-8 text-center">
+        <section className="py-16 px-6 bg-[#0F0F0F]">
+          <div className="max-w-3xl mx-auto bg-[#18181b] text-white rounded-xl shadow-lg p-8 text-center">
             <h2 className="text-2xl font-bold mb-4">Stay in the Loop</h2>
             <p className="mb-6">
               Want to be among the first to know when jobs are posted? Reach out now!
             </p>
             <a
               href="https://www.voidesports.org/contact "
-              className="inline-block bg-white text-blue-700 hover:bg-gray-100 font-semibold py-3 px-6 rounded-lg transition duration-300"
+              className="inline-block bg-white text-black hover:bg-gray-100 font-semibold py-3 px-6 rounded-lg transition duration-300"
             >
               Contact us on the contact page
             </a>
