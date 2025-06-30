@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from 'next/link';
+import { useEffect } from 'react';
 
 const featuredTeams = [
   {
@@ -31,11 +34,39 @@ const latestNews = [
 ];
 
 export default function Home() {
+  // Fade logo on scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      const logo = document.querySelector('.fade-on-scroll');
+      if (logo) {
+        const fadeStart = 0;
+        const fadeEnd = 350;
+        const scrollY = window.scrollY;
+        let opacity = 1;
+        if (scrollY > fadeStart) {
+          opacity = Math.max(0, 1 - (scrollY - fadeStart) / (fadeEnd - fadeStart));
+        }
+        (logo as HTMLElement).style.opacity = String(opacity * 0.2);
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+    // Initial call in case user is not at top
+    handleScroll();
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="h-screen flex items-center justify-center bg-[#0F0F0F]">
-        <div className="text-center void-container">
+      <section className="h-screen flex items-center justify-center bg-[#0F0F0F] relative overflow-hidden">
+        {/* Logo background */}
+        <img
+          src="/logos/logo.png"
+          alt="Void Logo Background"
+          className="absolute left-1/2 top-1/2 w-[900px] md:w-[1200px] -translate-x-1/2 -translate-y-1/2 opacity-20 pointer-events-none select-none will-change-opacity fade-on-scroll"
+          style={{ zIndex: 0 }}
+        />
+        <div className="text-center void-container relative z-10">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 gradient-text">
             WELCOME TO VOID
           </h1>
